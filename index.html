@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grade 11 Romans — Christmas Party Poster</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif; 
+      background: linear-gradient(135deg, #ff0000, #ffffff); 
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .poster {
+      background: linear-gradient(145deg, #ff0000, #ffffff);
+      border: 8px solid #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      max-width: 850px;
+      padding: 30px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .poster::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: radial-gradient(circle, rgba(0,0,0,0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    .header {
+      background:linear-gradient(145deg, #ff0000, #ffffff);
+      color: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 1;
+    }
+    .logo {
+      font-size: 3em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+    .title h1 {
+      font-size: 3em;
+      margin: 10px 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      letter-spacing: 2px;
+    }
+    .title p {
+      font-size: 1.4em;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    .date {
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 15px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 15px;
+      border: 4px solid #ffffff;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+    .details {
+      background: linear-gradient(145deg, #f5f5dc, #faf0e6);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      width: 100%;
+      max-width: 700px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .details h2 {
+      color: #ca5d0f; 
+      margin-top: 0;
+      font-size: 2em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    .chips {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .chip {
+      background: linear-gradient(90deg, #deb887, #d2b48c);
+      color: #333;
+      padding: 8px 15px;
+      border-radius: 25px;
+      font-size: 1em;
+      font-weight: bold;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+    aside {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      max-width: 700px;
+      margin-bottom: 30px;
+    }
+    .box {
+      background: linear-gradient(145deg, #f0f8ff, #e6e6fa);
+      border: 3px solid #708090; 
+      border-radius: 15px;
+      padding: 20px;
+      width: 45%;
+      text-align: left;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .box h3 {
+      color: #4b4949; 
+      margin-top: 0;
+      font-size: 1.5em;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    .mailto {
+      display: inline-block;
+      background: linear-gradient(90deg, #778899, #708090);
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 15px;
+      font-weight: bold;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    
+    }
+    .mailto:hover {
+      transform: scale(1.05);
+    }
+    .footer {
+      background:linear-gradient(145deg, #ff0000 , #ffffff);
+      color: rgb(0, 0, 0);
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 1em;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+   
+   
+  </style>
+</head>
+<body>
+  <div class="poster" role="document" aria-label="G11 Romans Christmas Party poster">
+    <div class="header">
+      <div class="logo" aria-hidden="true">G11</div>
+      <div class="title">
+        <h1>Grade 11 ROMANS — Christmas Party</h1>
+        <p>Christmas Celebration • All Students Welcome</p>
+      </div>
+      <div class="date" aria-hidden="true">Dec 20</div>
+    </div>
+
+    <div class="content">
+      <div>
+        <div class="hero" aria-hidden="true">
+          <img src="https://hercanberra.com.au/wp-content/uploads/2015/11/christmas-tree-feature.jpg" alt="christmas image">
+        </div>
+
+        <div class="details" aria-label="Party details">
+          <h2>Party Details</h2>
+          <p><strong>Date:</strong> December 20, 2023</p>
+          <p><strong>Time:</strong> 6:00 PM — 9:00 PM</p>
+          <p><strong>Venue:</strong> Ramos Building, Room 404</p>
+          <p><strong>Dress:</strong> Festive Red &amp; Green — Casual</p>
+
+          <div class="chips" aria-hidden="false">
+            <div class="chip">Secret Santa</div>
+            <div class="chip">Performances</div>
+            <div class="chip">Games</div>
+            <div class="chip">Foods</div>
+          </div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="box" aria-label="RSVP">
+          <h3>RSVP</h3>
+          <p>Please confirm by December 18.</p>
+          <a class="mailto" href="mailto:ms.johnson@school.edu?subject=G11%20Romans%20Christmas%20RSVP">Email RSVP</a>
+          <p style="margin-top:8px"><strong>Organizer:</strong>David Faune<br><a href="mailto:justinmena731@gamil.com">jdfaune17@gmail.com</a></p>
+        </div>
+
+        <div class="box" aria-label="What to bring">
+          <h3>What to Bring</h3>
+          <p>- Exchange Gift (under ₱200)</p>
+          <p>- Extra Clothes</p>
+          <p>- Christmas Outfit</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="footer">
+     <p>Organized by Mr. Faune — School Event</p>
+    </div>
+  </div>
+
+
+<audio class="audio-output" style="display: none;"></audio><div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div></body></html>
